@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GrooveStream - Music for Everyone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">🎵 Melody</div>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="auth-btn" onclick="showAuth('login')">Login</button></li>
+        <li><button class="auth-btn" onclick="showAuth('signup')">Sign Up</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Stream Your Vibe</h1>
+    <p>Experience unlimited music anytime, anywhere.</p>
+    <a href="#pricing" class="cta-button">Start Free Trial</a>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <h2>Why Choose Melody?</h2>
+    <div class="feature-cards">
+      <div class="card">🎧 High Quality Audio</div>
+      <div class="card">📥 Offline Downloads</div>
+      <div class="card">🌍 Global Music Library</div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial">
+        <p>"Best music experience ever!"</p>
+        <h4>- Alex M.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Offline mode saves my day!"</p>
+        <h4>- Priya R.</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="pricing">
+    <h2>Choose Your Plan</h2>
+    <div class="pricing-tiers">
+      <div class="tier">
+        <h3>Free</h3>
+        <p>$0/month</p>
+        <ul>
+          <li>Ads supported</li>
+          <li>Standard Quality</li>
+        </ul>
+      </div>
+      <div class="tier">
+        <h3>Premium</h3>
+        <p>$9.99/month</p>
+        <ul>
+          <li>No Ads</li>
+          <li>HiFi Quality</li>
+          <li>Offline Mode</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Stay Updated</h2>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Melody. All rights reserved.</p>
+  </footer>
+
+  <!-- Auth Modal -->
+  <div id="authModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+
+      <div id="loginForm" class="auth-form">
+        <h2>Login</h2>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button onclick="fakeLogin()">Login</button>
+        <p>Don't have an account? <a href="#" onclick="switchForm('signup')">Sign Up</a></p>
+      </div>
+
+      <div id="signupForm" class="auth-form" style="display:none;">
+        <h2>Sign Up</h2>
+        <input type="text" placeholder="Username" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button onclick="fakeSignup()">Sign Up</button>
+        <p>Already have an account? <a href="#" onclick="switchForm('login')">Login</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

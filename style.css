@@ -1,0 +1,162 @@
+/* Reset and Body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #111;
+  padding: 20px 0;
+}
+nav {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.logo {
+  color: #fff;
+  font-size: 1.5em;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin-left: 15px;
+}
+.nav-links a, .auth-btn {
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4') center/cover no-repeat;
+  text-align: center;
+  color: #fff;
+  padding: 100px 20px;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.cta-button {
+  background: #ff4b2b;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.features, .testimonials, .pricing, .contact {
+  max-width: 1000px;
+  margin: auto;
+}
+.feature-cards, .testimonial-cards, .pricing-tiers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card, .testimonial, .tier {
+  background: #fff;
+  margin: 10px;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+input[type="email"] {
+  padding: 10px;
+  width: 300px;
+  max-width: 90%;
+  margin-top: 10px;
+}
+button {
+  padding: 10px 20px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Auth Form */
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.auth-form button {
+  background: #0077cc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
